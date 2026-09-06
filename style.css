@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background: #102a43;
+    color: white;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION */
+nav {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+nav a {
+    text-decoration: none;
+    color: #102a43;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #1976d2;
+}
+
+/* FULL SCREEN HERO */
+.hero {
+    width: 100%;
+    height: calc(100vh - 150px);
+    min-height: 600px;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #102a43;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+/* BUTTONS */
+button {
+    border: none;
+    padding: 16px 30px;
+    margin: 12px 8px;
+    border-radius: 10px;
+    background: #1976d2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: white;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .hero {
+        height: calc(100vh - 180px);
+        min-height: 550px;
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 350px;
+        font-size: 16px;
+    }
+}
